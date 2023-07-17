@@ -1,5 +1,5 @@
 # INPUT
-The user can supply not inputs to interact with this example web app. 
+The user cannot supply inputs to interact with this example web app. 
 
 # PROCESS
 This app begins its entry with App.js, where it loads the Resume component. 
