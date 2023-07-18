@@ -1,0 +1,35 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.movies-selector {
+    margin-bottom: 20px;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    text-align: left;
+}
+  
+.movie-card h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.movie-card p {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 14px;
+}
+
+.movie-card:hover {
+    background-color: #f0f0f0;
+}
+  
+  

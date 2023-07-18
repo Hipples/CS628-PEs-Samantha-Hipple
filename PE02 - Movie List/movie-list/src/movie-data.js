@@ -11,6 +11,6 @@ export const movies = [{
 },{
     id: 2,
     title: "War of the Worlds",
-    genre: "Sci-Fi",
+    genre: "Science Fiction",
     year: "2005"
 }]
