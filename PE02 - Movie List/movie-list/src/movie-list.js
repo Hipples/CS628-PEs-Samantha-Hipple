@@ -5,7 +5,6 @@ import './movies.css'
 
 const MovieList = () => {
   const [selectedGenre, setSelectedGenre] = useState('All Genres');
-  const [selectedMovie, setSelectedMovie] = useState(null);
 
   const uniqueGenres = ['All Genres', ...new Set(movies.map(movie => movie.genre))];
 
@@ -13,7 +12,6 @@ const MovieList = () => {
     movies : movies.filter(movie => movie.genre === selectedGenre);
 
   const handleMovieClick = (movie) => {
-    setSelectedMovie(() => movie)
     alert(`You have clicked ${movie}!`)
   }
 
