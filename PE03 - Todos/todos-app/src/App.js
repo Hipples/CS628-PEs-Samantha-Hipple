@@ -17,8 +17,8 @@ const App = () => {
     setTasks(updatedTasks);
   }
   return (
-    <div class='flex h-100% bg-gradient-to-b from-cyan-500 to-purple-950 justify-center'>
-      <div class='bg-slate-50 basis-3/4 border-4'>
+    <div class='flex min-h-screen bg-gradient-to-b from-cyan-500 to-purple-950 justify-center'>
+      <div class='bg-slate-50 basis-3/4 border-4 shrink'>
         <h1 class='font-serif text-5xl text-center mt-10'>My Todos!</h1>
         <AddTask onAddTask={handleAddTask}/>
         <TodoList tasks={tasks} onDelete={handleDeleteTask}/>
