@@ -1,0 +1,20 @@
+.city-details {
+  width: 70%; /* Adjust to the width you want */
+  margin: 2em auto;
+  padding: 1em;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.city-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.city-details p {
+  font-size: 18px;
+  margin-bottom: 0.5em;
+}

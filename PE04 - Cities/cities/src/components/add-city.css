@@ -1,0 +1,52 @@
+/* For the AddCity form container */
+.add-city-form {
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-city-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #30475e;  /* Darkish blue color for consistency */
+}
+
+/* For each group of label and input */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Styling for the submit button */
+.add-city-form button {
+  display: block;
+  width: 100%;
+  background-color: #30475e;  /* Darkish blue */
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-city-form button:hover {
+  background-color: #223347; /* A shade darker when hovered */
+}

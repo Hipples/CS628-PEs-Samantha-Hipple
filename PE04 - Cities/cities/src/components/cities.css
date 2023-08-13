@@ -1,0 +1,20 @@
+/* Container style */
+.cities-list {
+  max-width: 90%; /* Takes up 90% of the screen width */
+  margin: 2rem auto; /* Top/bottom margin is 2rem, auto centers it horizontally */
+  padding: 2rem; /* Padding inside the card */
+  background-color: #fff; /* White background color for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for an elevated look */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* If you have a list inside, style the list items */
+.cities-list ul {
+  list-style-type: none; /* No bullets */
+  padding: 0; /* No padding */
+}
+
+.cities-list li {
+  padding: 0.5rem 0; /* Some padding for each list item */
+  border-bottom: 1px solid #eee; /* Optional: a light border between items */
+}
