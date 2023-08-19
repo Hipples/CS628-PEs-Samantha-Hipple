@@ -1,16 +1,12 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 
+import Header from './components/header';
 import Cities from './components/cities';
 import AddCity from './components/add-city';
-import './App.css';
 import CityDetails from './components/city-details';
 
-const Header = () => (
-  <header className='app-header'>
-    <h1>The Cities Web App</h1>
-  </header>
-);
+import './App.css';
 
 const App = () => {
   const [cities, setCities] = useState([]);
