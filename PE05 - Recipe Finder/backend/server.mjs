@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 
-import './config/load_environment.mjs';
+import './config/load-environment.mjs';
 import recipes from './routes/recipes.mjs';
 
 const PORT = process.env.PORT || 3001;
