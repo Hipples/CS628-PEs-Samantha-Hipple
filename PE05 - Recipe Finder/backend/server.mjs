@@ -22,7 +22,7 @@ app.use("/recipe", recipes);
 
 // the root path ("/") sends a welcome message as the response
 app.get("/", (req, res) =>{
-  res.send("Welcome to the Recipe Finder app!");
+  res.send("Welcome to the Recipe Finder API!");
 });
 
 // start the sxpress server on the specified port
