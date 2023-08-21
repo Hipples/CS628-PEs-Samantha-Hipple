@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Spaghetti Aglio e Olio",
+    "ingredients": [
+      "Spaghetti", "Olive oil", "Garlic cloves", "Red pepper flakes", "Fresh parsley", "Salt", "Grated Parmesan cheese"
+    ],
+    "instructions": "Boil spaghetti in salted water until al dente. Sauté garlic and red pepper flakes in olive oil until garlic is golden brown. Mix pasta with garlic oil. Garnish with fresh parsley and Parmesan cheese."
+  },
+  {
+    "name": "Grilled Cheese Sandwich",
+    "ingredients": [
+      "Bread slices", "Butter", "Cheese slices"
+    ],
+    "instructions": "Butter the outside of the bread slices. Place cheese slices between the bread. Cook the sandwich in a skillet over medium heat until the bread is toasted and the cheese is melted."
+  },
+  {
+    "name": "Caprese Salad",
+    "ingredients": [
+      "Fresh mozzarella cheese", "Tomatoes", "Fresh basil leaves", "Olive oil", "Balsamic vinegar", "Salt", "Black pepper"
+    ],
+    "instructions": "Slice mozzarella and tomatoes. Arrange them on a plate, alternating with basil leaves. Drizzle with olive oil and balsamic vinegar. Season with salt and pepper."
+  },
+  {
+    "name": "Pancakes",
+    "ingredients": [
+      "Flour", "Baking powder", "Salt", "Sugar", "Milk", "Egg", "Butter", "Syrup"
+    ],
+    "instructions": "Mix dry ingredients. Add wet ingredients and stir until smooth. Cook spoonfuls of batter on a griddle over medium heat until bubbles form on top. Flip and cook until golden brown. Serve with syrup."
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "ingredients": [
+      "Chicken breasts", "Romaine lettuce", "Caesar dressing", "Croutons", "Grated Parmesan cheese"
+    ],
+    "instructions": "Grill chicken until cooked through. Slice chicken and set aside. In a large bowl, toss romaine lettuce with Caesar dressing. Top with chicken slices, croutons, and Parmesan cheese."
+  }
+]
