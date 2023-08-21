@@ -4,7 +4,7 @@ import cors from 'cors';
 import './config/load_environment.mjs';
 import recipes from './routes/recipes.mjs';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // cors middleware to enable cross-origin resource sharing for all routes
