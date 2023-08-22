@@ -1,12 +1,8 @@
 import './App.css'
+import RecipeList from './routes/recipe-list';
 
-import useRecipes from './hooks/use-recipes'
+const App = () => (
+  <RecipeList />
+);
 
-const App = () => {
-  const { recipes, loading, error } = useRecipes();
-
-  loading ? <div></div> 
-  return (
-
-  );
-}
+export default App;

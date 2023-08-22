@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { getRecipes } from '../services/api';
 
 const useRecipes = () => {
-  const [recipes, setRecipes] = useState();
-  const [loading, setLoading] = useState();
+  const [recipes, setRecipes] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
 
   useEffect(() => {
@@ -19,6 +19,7 @@ const useRecipes = () => {
     }
     fetchRecipes();
   }, []);
+  return { recipes, loading, error }
 }
 
 export default useRecipes;
