@@ -1,23 +1,18 @@
-import useRecipes from "../hooks/use-recipes";
+import { useLoaderData } from "react-router-dom";
 
 // component to display the list of recipe names
 const RecipeList = () => {
-  // destructure the values returned by the useRecipes hook
-  const { recipes, loading, error } = useRecipes();
-  // render different content based on API reponse
+  // destructure the values returned by the useLoaderData hook
+  const { recipes, status } = useLoaderData();
+  // render different content based on API response
   return (
     <div>
-      {error ? (  // if there is an error
-        <p>Error: {error.message}</p> 
-      // while loading is true
-      ) : loading ? (
-        <p>Loading...</p> 
-      // if no recipes are found
+      {(status !== 200 && status !== 304) ? (
+        <p>Error: Failed to fetch recipes. {status}</p>
       ) : recipes.length === 0 ? (
         <p>No recipes found.</p>
-      // otherwise display the list of recipe names
-      ) : (  
-        <ul> 
+      ) : (
+        <ul>
           {recipes.map((recipe) => (
             <li key={recipe._id}>{recipe.name}</li>
           ))}
