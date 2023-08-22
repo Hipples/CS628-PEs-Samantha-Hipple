@@ -1,8 +1,9 @@
+import { Route, RouterProvider, Routes } from 'react-router-dom';
 import './App.css'
-import RecipeList from './routes/recipe-list';
+import router from './routes/router';
 
 const App = () => (
-  <RecipeList />
+  <RouterProvider router={router} />
 );
 
 export default App;

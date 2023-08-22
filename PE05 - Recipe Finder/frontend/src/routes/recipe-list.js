@@ -1,5 +1,6 @@
 import useRecipes from "../hooks/use-recipes";
 
+// component to display the list of recipe names
 const RecipeList = () => {
   // destructure the values returned by the useRecipes hook
   const { recipes, loading, error } = useRecipes();
