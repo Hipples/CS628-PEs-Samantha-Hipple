@@ -1,10 +1,8 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Outlet, Link } from "react-router-dom";
 
-// component to display the list of recipe names
 const RecipeList = () => {
-  // destructure the values returned by the useLoaderData hook
   const { recipes, status } = useLoaderData();
-  // render different content based on API response
+
   return (
     <div>
       {(status !== 200 && status !== 304) ? (
@@ -14,10 +12,13 @@ const RecipeList = () => {
       ) : (
         <ul>
           {recipes.map((recipe) => (
-            <li key={recipe._id}>{recipe.name}</li>
+            <li key={recipe._id}>
+              <Link to={`${recipe._id}`} state={{ recipe }}>{recipe.name}</Link>
+            </li>
           ))}
         </ul>
       )}
+      <Outlet />
     </div>
   );
 }
