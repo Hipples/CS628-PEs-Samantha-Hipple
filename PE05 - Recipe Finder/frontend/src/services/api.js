@@ -14,7 +14,17 @@ export const getRecipes = async () => {
     throw error;
   }
 } 
-
+// get a single recipe by id
+export const getRecipeById = async (id) => {
+  try {
+    const response = await axios.get(`${apiURL}/recipe/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipe by id:', error);
+    throw error;
+  }
+}
+// add a new recipe to the database
 export const createRecipe = async (recipeData) => {
   try {
     // ensure recipeData has the fields: name, ingredients, and instructions

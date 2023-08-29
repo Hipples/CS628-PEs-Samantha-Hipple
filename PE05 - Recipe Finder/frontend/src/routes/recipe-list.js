@@ -1,10 +1,13 @@
 import { useLoaderData, Outlet, Link } from "react-router-dom";
 
+import Header from "../components/header";
+
 const RecipeList = () => {
   const { recipes, status } = useLoaderData();
 
   return (
     <div>
+      <Header />
       {(status !== 200 && status !== 304) ? (
         <p>Error: Failed to fetch recipes. {status}</p>
       ) : recipes.length === 0 ? (
@@ -13,7 +16,7 @@ const RecipeList = () => {
         <ul>
           {recipes.map((recipe) => (
             <li key={recipe._id}>
-              <Link to={`${recipe._id}`} state={{ recipe }}>{recipe.name}</Link>
+              <Link to={recipe._id}>{recipe.name}</Link>
             </li>
           ))}
         </ul>

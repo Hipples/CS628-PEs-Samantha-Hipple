@@ -5,8 +5,8 @@ import loadRecipes from "../loaders/load-recipes";
 import RecipeDetails from "./recipe-details";
 
 const router = createBrowserRouter([
-  { path: "/:id", Component: RecipeDetails, loader: loadRecipes },
-  { path: "/", Component: RecipeList, loader: loadRecipes },
+  { path: "/", Component: RecipeList, loader: loadRecipes, 
+      children: [{ path: "/:id", Component: RecipeDetails, loader: loadRecipes }] },
   { path: "*", Component: Root }
 ]);
 
